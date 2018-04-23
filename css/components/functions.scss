@@ -1,0 +1,28 @@
+/* functions.scss */
+
+@function em($target, $context: $font-size) {
+  @return ($target / $context) * 1em;
+}
+
+@mixin border-radius($rad) {
+  -webkit-border-radius: $rad;
+  -moz-border-radius: $rad;
+  -o-border-radius: $rad;
+  border-radius: $rad;
+}
+
+@mixin transition($time) {
+	-webkit-transition: all $time ease;
+	-moz-transition: all $time ease;
+	-ms-transition: all $time ease;
+	-o-transition: all $time ease;
+	transition: all $time ease;
+}
+
+@mixin transform($prop) {
+	-webkit-transform: $prop;
+	-moz-transform: $prop;
+	-ms-transform: $prop;
+	-o-transform: $prop;
+	transform: $prop;
+}

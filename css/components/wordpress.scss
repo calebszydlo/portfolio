@@ -1,0 +1,83 @@
+/* wordpress.scss */
+
+.alignright {
+	float: right;
+	margin: 0 0 1em 1em;
+	@media (max-width: $mobile-width) {
+		float: none;
+		margin: 0 0 1em 0;
+		display: block;
+	}
+}
+
+.alignleft {
+	float: left;
+	margin: 0 1em 1em 0;
+	@media (max-width: $mobile-width) {
+		float: none;
+		margin: 0 0 1em 0;
+		display: block;
+	}
+}
+
+.aligncenter, div.aligncenter {
+	display: block;
+	margin: 0 auto 1em;
+}
+
+.size-full, .attachment-full {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.size-large, .attachment-large {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.size-medium, .attachment-medium {
+	width: 50%;
+	height: auto;
+	display: block;
+	@media (max-width: $mobile-width) {
+		width: 100%;
+		max-width: 314px;
+	}
+}
+
+.size-small, .attachment-small {
+	width: 33%;
+	height: auto;
+	display: block;
+	@media (max-width: $mobile-width) {
+		width: 100%;
+		max-width: 210px;
+	}
+}
+
+// if logged on
+
+.logged-in {
+	.row--first {
+//		margin-top: 48px;
+	}
+
+	.row--header {
+		top: 32px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+/* settings.scss */
+
+// Fonts
+
+$content: 			'robotolight',"Helvetica Neue", Helvetica, Arial, sans-serif;
+$content-italic:	'robotolight_italic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$slab:				'roboto_slabregular', "Courier Bold", Courier, Times, serif;
+$script:			'lakesight', "Brush Script MT", cursive;
+$slab-light:		'roboto_slablight', Courier, Times, serif;
+
+
+$font-size:			18;
+
+// Colors
+
+$white:				#fff;
+$black:				#000;
+$bg-dark:			#1c2122;
+$bg-gray:			#303538;
+$bg-light:			#f3f0ea;
+$dark-gray:			#59544c;
+$medium-gray:		#938f89;
+$light-gray:		#bebab2;
+$gold:				#d5912b;
+
+
+
+
+
+
+// Responsive
+
+$tablet-width:		930px;
+$mobile-width:		767px;
+$sub-mobile-width:	460px;

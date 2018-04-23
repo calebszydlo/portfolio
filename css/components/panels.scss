@@ -1,0 +1,111 @@
+/* panels.scss */
+
+.row {
+	overflow: hidden;
+}
+
+.row__cell--inner {
+	padding: 0 11%;
+}
+
+.row__cell--inner--top {
+	padding-top: 50px;
+	@media (max-width: $mobile-width) {
+		padding-top: 0;
+	}
+}
+.row--cell--inner--bottom {
+	padding-bottom: 50px;
+	@media (max-width: $mobile-width) {
+		padding-bottom: 0;
+	}
+}
+
+.row--text, .row--2-col, .row--grid {
+	padding: 80px 0 65px;
+}
+
+.row--first {
+	margin-top: 100px;
+	padding: 80px 0 0;
+}
+
+.row--last {
+	padding: 0 0 65px;
+}
+
+.back-to-back--first {
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+
+.back-to-back--middle {
+	padding: 0 0 30px;
+}
+
+.row--2-col--img {
+	@media (max-width:$mobile-width) {
+		padding-bottom: 30px;
+	}
+}
+
+.back-to-back--last {
+	padding-top: 0;
+	padding-bottom: 65px;
+}
+
+.row--image-band__cell {
+	width: 33%;
+	height: 300px;
+	float: left;
+	@media (max-width: $tablet-width) {
+		height: 225px;
+	}
+	@media (max-width: $mobile-width) {
+		height: 150px;
+	}
+}
+
+.row--image-band__cell--first {
+	background: url(../images/compass.jpg) no-repeat center center;
+}
+
+.row--image-band__cell--second {
+	width: 34%;
+	position: relative;
+	background: url(../images/ruler.jpg) no-repeat center center;
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		width: 3px;
+		height: 300px;
+		background: $bg-light;
+		top: 0;
+		z-index: 100;
+	}
+	&:before {
+		left: 0;
+	}
+	&:after {
+		right: 0;
+	}
+}
+
+.row--image-band__cell--third {
+	background: url(../images/sketchbook.jpg) no-repeat center center;
+}
+
+.row--grid--full img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+@media(max-width: $mobile-width) {
+	.mobile-space-bottom {
+		margin-bottom: 30px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

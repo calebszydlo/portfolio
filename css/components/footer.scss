@@ -1,0 +1,27 @@
+/* footer.scss */
+
+.row--footer {
+	overflow: hidden;
+}
+
+.row--footer__content {
+	border-top: 3px double $light-gray;
+	padding: 40px 0;
+	.home & {
+		border-top: none;
+	}
+}
+
+.footer__link {
+	border-bottom: none;
+	&:hover {
+		border-bottom: none;
+	}
+}
+
+.copyright {
+	font-size: em(14);
+	line-height: 1em;
+	margin-top: 20px;
+	color: $medium-gray;
+}

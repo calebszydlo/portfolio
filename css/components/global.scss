@@ -1,0 +1,205 @@
+/* global.scss */
+
+html {
+	height: 100%;
+	min-height: 100%;
+}
+
+body {
+	font-size: 18px;
+	font-family: $content;
+	-webkit-text-size-adjust: none;
+	-webkit-overflow-scrolling: touch;
+	overflow: scroll;
+	background: $bg-light url(../images/backgroundtexture.png) repeat 0 0;
+	color: $dark-gray;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: $dark-gray;
+	border-bottom: 2px solid $gold;
+//	padding-bottom: 2px;
+	@include transition(0.3s);
+	&[href^=tel] {
+		cursor: default;
+	}
+	&:hover {
+		color: $gold;
+		border-bottom: 2px solid $dark-gray;
+	}
+}
+
+a:hover {
+}
+
+img {
+	-ms-interpolation-mode: bicubic;
+}
+
+p, ol, ul {
+	line-height: 1.5;
+	margin: 0 0 1em 0;
+}
+
+ul {
+	font-family: $slab-light;
+	text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $slab;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	margin: 0.5em 0 1em;
+}
+
+h1 {
+	font-size: em(24);
+}
+
+h2 {
+	font-size: em(18);
+}
+
+h3 {
+	font-size: em(16);
+}
+
+hr {
+	width: 100px;
+	height: 1px;
+	margin: 40px auto;
+	border-top: 1px solid $gold;
+	border-bottom: 1px solid $gold;
+	border-left: none;
+	border-right: none;
+}
+
+#container {
+	min-width: 320px;
+}
+
+.clear {
+	clear: both;
+}
+
+.center {
+	text-align: center;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.accent {
+	font-family: $script;
+	text-transform: none;
+	font-size: 2em;
+	display: inline-block;
+	padding: 0 5px;
+	@include transform(rotate(-10deg));
+	@include transition(0.2s);
+	&:hover {
+		@include transform(rotate(0deg));
+	}
+	.ie9 & {
+		@include transform(none);
+	}
+}
+
+.no-tilt {
+	@include transform(rotate(0deg));
+}
+
+blockquote {
+	margin: 0.5em 0 1em;
+	font-family: $slab-light;
+	font-size: em(24);
+	padding-top: 60px;
+	line-height: 1.5em;
+	background: url(../images/quote.png) no-repeat center top;
+	.svg & {
+		.background: url(../images/quote.svg) no-repeat center top;
+	}
+}
+
+.button {
+	margin-top: 1em;
+	display: inline-block;
+	*display: inline; /* IE7 fix */
+    *zoom: 1; /* IE7 fix */
+    border: 3px solid $gold;
+    @include border-radius(3px);
+}
+
+.button--light {
+	border: 3px solid $bg-light;
+}
+
+.button__link {
+	font-family: $slab;
+	text-transform: uppercase;
+	display: block;
+	font-size: em(16);
+	padding: 13px 20px 12px;
+	line-height: 1;
+	color: $gold;
+	border-bottom: none;
+	@include transition(0.3s);
+	&:hover {
+		color: $bg-light;
+		background: $gold;
+		border-bottom: none;
+	}
+}
+
+.button__link--light {
+	color: $bg-light;
+	@include transition(0.3s);
+	&:hover {
+		color: $gold;
+		background: $bg-light;
+	}
+}
+
+.icon-link {
+	display: block;
+	margin: 1em 0 1em;
+}
+
+.icon-link__link {
+	display: inline-block;
+	*display: inline; /* IE7 fix */
+    *zoom: 1; /* IE7 fix */
+	line-height: 1em;
+	padding: 11px 0 12px 50px;
+	margin-left: -25px;
+	font-family: $slab;
+	border-bottom: none;
+	&:hover {
+		border-bottom: none;
+	}
+}
+
+.icon-link__link--email {
+	background: url(../images/emailicon.png) no-repeat left top;
+	.svg & {
+		background: url(../images/emailicon.svg) no-repeat left top;
+	}
+}
+
+.icon-link__link--instagram {
+	background: url(../images/instagramicon.png) no-repeat left top;
+	.svg & {
+		background: url(../images/instagramicon.svg) no-repeat left top;
+	}
+}
+
+.horizontal-list__item {
+	display: block;
+	float: left;
+	text-align: center;
+}
+

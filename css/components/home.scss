@@ -1,0 +1,136 @@
+/* home.scss */
+
+.row--parallax {
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	min-height: 650px;
+	position: relative;
+//	max-width: 1800px;
+//	max-height: 1000px;
+//	background: $bg-dark;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: scroll;
+	@media (max-width: $mobile-width) {
+//		background-size: auto 800px;
+		min-height: 500px;
+//		max-height: 800px !important;
+	}
+}
+
+.ie .row--parallax {
+	min-width: 1100px;
+	height: 733px;
+}
+
+.row--parallax--1 {
+	z-index: 1;
+	background-image: url('../images/featured-home.png');
+}
+
+.featured {
+   display: table;
+   width: 100%;
+   color: $bg-light;
+}
+.featured__center {
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+}
+
+/*.ie .featured {
+	padding: 150px 0 0;
+}*/
+
+.featured__title {
+	font-size: em(132);
+	line-height: 1.3em;
+	margin: 0 0 .3em;
+	@include transform(rotate(-10deg));
+	@include transition(0.2s);
+	&:hover {
+		@include transform(rotate(0deg));
+	}
+	@media (max-width: $mobile-width) {
+		font-size: em(56);
+	}
+	.ie9 & {
+		@include transform(none);
+	}
+}
+
+.featured__tagline {
+	font-family: $slab;
+	text-transform: uppercase;
+	font-size: em(24);
+	@media (max-width: $mobile-width) {
+		font-size: em(18);
+	}
+}
+
+.scroll-down {
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+}
+
+.scroll-down__centered {
+	color: $bg-light;
+	font-size: em(14);
+	text-transform: uppercase;
+	padding: 0 0 15px;
+	background: url('../images/arrow-down.png') no-repeat center bottom;
+	position: relative;
+	left: -50%;
+}
+
+.icon-list {
+	clear: both;
+	overflow: hidden;
+	width: 90%;
+	margin: 0 5% 20px;
+	@media (max-width: $tablet-width) {
+		width: 70%;
+		margin: 0 15% 20px;
+	}
+}
+
+.icon-list__item {
+	display: inline;
+	float: left;
+	width: 19%;
+	margin: 0 3%;
+	@media (max-width: $tablet-width) {
+		width: 42%;
+		margin: 0 4%;
+	}
+	@media (max-width: $mobile-width) {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+.icon-list__img {
+	margin-bottom: 5px;
+	@include transition(0.5s);
+	&:hover {
+		@include transform(rotate(360deg));
+	}
+}
+
+.icon-list__title {
+	font-family: $slab;
+	font-size: em(16);
+	text-transform: uppercase;
+}
+
+
+
+
+

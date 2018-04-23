@@ -1,0 +1,92 @@
+/* forms.scss */
+
+input[type='text'], input[type='tel'], input[type='email'], textarea {
+	-webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    @include border-radius(0);
+    color: $dark-gray;
+    font-family: $slab;
+    font-size: em(14);
+    padding: 5px 8px;
+    background: $white;
+    border: none;
+
+}
+
+input[type='text'], input[type='tel'], input[type='email'] {
+	margin: 0 0 20px 0;
+    width: 40%;
+    @media (max-width: $mobile-width) {
+    	width: 90%;
+    }
+}
+
+input.input--left {
+	margin-left: 0;
+}
+
+input.input--right {
+	margin-left: 7%;
+	@media (max-width: $mobile-width) {
+		margin-left: 0;
+	}
+}
+
+textarea {
+	width: 90%;
+	height: 140px;
+	margin-bottom: 10px;
+	@media (max-width: $tablet-width) {
+		width: 92%;
+	}
+	@media (max-width: $mobile-width) {
+		width: 90%;
+	}
+}
+
+input[type='submit'] {
+	margin: 20px 0 0;
+	font-family: $slab;
+	border: 3px solid $gold;
+	background: none;
+    @include border-radius(3px);
+    text-transform: uppercase;
+	font-size: em(16);
+	padding: 13px 20px 12px;
+	line-height: 1;
+	color: $gold;
+	cursor: pointer;
+	@include transition(0.3s);
+	&:hover {
+		color: $bg-light;
+		background: $gold;
+	}
+}
+
+input.wpcf7-submit {
+	margin: 20px 0 0 16px;
+}
+
+.ajax-loader {
+	display: none;
+}
+
+span.wpcf7-not-valid-tip {
+	width: 40%;
+	display: none;
+}
+
+.wpcf7-not-valid, input[type='text'].wpcf7-not-valid, input[type='email'].wpcf7-not-valid {
+	box-shadow: 0 0 5px $gold;
+	border: 1px solid $gold;
+}
+
+div.wpcf7-response-output {
+	margin-top: 1em;
+	line-height: 1.5em;
+}
+
+div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
+	border: none;
+}

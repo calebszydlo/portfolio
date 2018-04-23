@@ -1,0 +1,36 @@
+### Root development directories and files ###
+
+backups
+build
+caleb-up-db
+cgi-bin
+db
+files
+fonts
+images-for-upload
+old
+transfers
+.DS_Store
+.htaccess
+error_log
+sitemap.xml
+css/.sass-cache
+
+### WordPress ###
+
+index.php
+wp
+
+wp-config-local-live.php
+wp-config-local.php
+wp-config.php
+
+wp-content/upgrade
+wp-content/.DS_Store
+wp-content/index.php
+
+wp-content/plugins/*
+!wp-content/plugins/cs-portfolio
+
+wp-content/themes/*
+!wp-content/themes/calebszydlo
